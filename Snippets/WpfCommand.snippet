@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>SetterGetter</Title>
+      <Author>fhnaseer</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>WpfCommand</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>commandName</ID>
+          <ToolTip>commandName</ToolTip>
+          <Default>commandName</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>CommandName</ID>
+          <ToolTip>CommandName</ToolTip>
+          <Default>CommandName</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>_commandNameCommand</ID>
+          <ToolTip>_commandNameCommand</ToolTip>
+          <Default>_commandNameCommand</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Kind="type decl" Delimiter="$"><![CDATA[private ICommand $_commandNameCommand$;
+public ICommand $CommandName$Command => $_commandNameCommand$ ?? ($_commandNameCommand$ = new RelayCommand($CommandName$));
+
+internal void $CommandName$()
+{
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

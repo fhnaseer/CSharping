@@ -31,6 +31,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests.Core", "Tests\Uni
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests.Framework", "Tests\UnitTests.Framework\UnitTests.Framework.csproj", "{237FFAF6-A434-431D-B4DC-5C7BFF6CFB22}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Snippets", "Snippets", "{F222C34A-A88C-4440-893C-A04C200E7BBC}"
+	ProjectSection(SolutionItems) = preProject
+		Snippets\ATest.snippet = Snippets\ATest.snippet
+		Snippets\CLSCompliant.snippet = Snippets\CLSCompliant.snippet
+		Snippets\CodeAnalysisDictionary.snippet = Snippets\CodeAnalysisDictionary.snippet
+		Snippets\EqualityOverrides.snippet = Snippets\EqualityOverrides.snippet
+		Snippets\ETest.snippet = Snippets\ETest.snippet
+		Snippets\Getter.snippet = Snippets\Getter.snippet
+		Snippets\JsonProperty.snippet = Snippets\JsonProperty.snippet
+		Snippets\ReferenceEqual.snippet = Snippets\ReferenceEqual.snippet
+		Snippets\ReferenceNull.snippet = Snippets\ReferenceNull.snippet
+		Snippets\WpfCommand.snippet = Snippets\WpfCommand.snippet
+		Snippets\WpfCommandCan.snippet = Snippets\WpfCommandCan.snippet
+		Snippets\WpfProperty.snippet = Snippets\WpfProperty.snippet
+		Snippets\XamarinCommand.snippet = Snippets\XamarinCommand.snippet
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

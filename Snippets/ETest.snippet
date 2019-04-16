@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>
+        Exception Test
+      </Title>
+      <Author>Faisal Hafeez</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>ETest</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>ExceptionType</ID>
+          <ToolTip>ExceptionType</ToolTip>
+          <Default>ArgumentNullException</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>MethodName</ID>
+          <ToolTip>MethodName</ToolTip>
+          <Default>TestMethodName</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[[TestMethod]
+[ExpectedException(typeof($ExceptionType$))]
+public void $MethodName$()
+{
+    // Arrange,
+    $end$
+    
+    // Act,
+
+
+    // Assert - No Assert, Exception expected,
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

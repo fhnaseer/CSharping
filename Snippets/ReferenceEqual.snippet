@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>NuGetPackagetoProjectjsonConverter</Title>
+      <Author>fhnaseer
+      </Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>ReferenceEquals</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>text</ID>
+          <ToolTip>text</ToolTip>
+          <Default>null</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Object Editable="true">
+          <ID>propertyName</ID>
+          <ToolTip>Name of Property</ToolTip>
+          <Default>Target</Default>
+          <Function>
+          </Function>
+          <Type>
+          </Type>
+        </Object>
+      </Declarations>
+      <Code Language="csharp" Kind="type decl" Delimiter="$"><![CDATA[if (ReferenceEquals($propertyName$, $text$))
+    throw new ArgumentNullException("$propertyName$");]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

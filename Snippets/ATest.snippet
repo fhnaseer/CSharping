@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>
+        Assert Test
+      </Title>
+      <Author>fhnaseer</Author>
+      <Description>Code snippet for simple Assert Test,</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>ATest</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>MethodName</ID>
+          <ToolTip>MethodName</ToolTip>
+          <Default>MethodName</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[[TestMethod]
+public void $MethodName$()
+{
+    // Arrange,
+    var expected;
+    $end$
+    // Act,
+    var actual;
+          
+    // Assert,
+    Assert.AreEqual(expected, actual);
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
