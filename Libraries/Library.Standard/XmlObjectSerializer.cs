@@ -9,7 +9,6 @@ namespace Library.Standard
     {
         public static void WriteXml<T>(string path, T source)
         {
-
             WriteXml(path, source, false);
         }
 
