@@ -1,6 +1,6 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
+using System;
 
 namespace UnitTests.Framework
 {
@@ -24,6 +24,21 @@ namespace UnitTests.Framework
             mock.Object.DoSomething("reset");
             Assert.ThrowsException<InvalidOperationException>(() =>
                 mock.Object.DoSomething("reset"));
+        }
+
+        [TestMethod]
+        public void Add_Works()
+        {
+            // Arrange,
+            const int expected = 5;
+            const int a = 2;
+            const int b = 3;
+
+            // Act,
+            var actual = Library.Framework.Math.Add(a, b);
+
+            // Assert,
+            Assert.AreEqual(expected, actual);
         }
     }
 }
