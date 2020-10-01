@@ -1,6 +1,6 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using System;
 
 namespace UnitTests.Framework
 {
@@ -39,6 +39,13 @@ namespace UnitTests.Framework
 
             // Assert,
             Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void Exclude_Test()
+        {
+            // Act,
+            Library.Framework.Math.About();
         }
     }
 }

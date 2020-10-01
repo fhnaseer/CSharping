@@ -20,5 +20,12 @@ namespace UnitTests.Core
             // Assert,
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void Exclude_Test()
+        {
+            // Act,
+            Math.About();
+        }
     }
 }
