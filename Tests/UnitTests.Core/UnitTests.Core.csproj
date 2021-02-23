@@ -21,16 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Libraries\Library.Core\Library.Core.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <AdditionalDesignTimeBuildInput Remove="FakesAssemblies\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Library.Core.Fakes">
-      <HintPath>FakesAssemblies\Library.Core.Fakes.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\..\Libraries\Library.Standard\Library.Standard.csproj" />
   </ItemGroup>
 
 </Project>
