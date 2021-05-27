@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{E3D0764F-A5B4-479C-B779-990B8697ABB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{9C0B5C89-8091-4876-B753-B02CDB296106}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{D956FF7A-735E-4CEB-B595-2B4D2D6B4102}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3A52DB22-4416-4027-9172-41A2CB1CF2ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Snippets", ".Snippets", "{F222C34A-A88C-4440-893C-A04C200E7BBC}"
+	ProjectSection(SolutionItems) = preProject
+		Snippets\ATest.snippet = Snippets\ATest.snippet
+		Snippets\CLSCompliant.snippet = Snippets\CLSCompliant.snippet
+		Snippets\CodeAnalysisDictionary.snippet = Snippets\CodeAnalysisDictionary.snippet
+		Snippets\EqualityOverrides.snippet = Snippets\EqualityOverrides.snippet
+		Snippets\ETest.snippet = Snippets\ETest.snippet
+		Snippets\Getter.snippet = Snippets\Getter.snippet
+		Snippets\JsonProperty.snippet = Snippets\JsonProperty.snippet
+		Snippets\ReferenceEqual.snippet = Snippets\ReferenceEqual.snippet
+		Snippets\ReferenceNull.snippet = Snippets\ReferenceNull.snippet
+		Snippets\WpfCommand.snippet = Snippets\WpfCommand.snippet
+		Snippets\WpfCommandCan.snippet = Snippets\WpfCommandCan.snippet
+		Snippets\WpfProperty.snippet = Snippets\WpfProperty.snippet
+		Snippets\XamarinCommand.snippet = Snippets\XamarinCommand.snippet
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Solution Items", ".Solution Items", "{E277E665-F282-47A5-A4D0-316B8051D19D}"
+	ProjectSection(SolutionItems) = preProject
+		CodeCoverage.runsettings = CodeCoverage.runsettings
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cpp.Tests", "Cpp\Cpp.Tests\Cpp.Tests.vcxproj", "{331021F8-A6AF-44B2-A4AF-D062E6AA18F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{331021F8-A6AF-44B2-A4AF-D062E6AA18F4}.Debug|x64.ActiveCfg = Debug|x64
+		{331021F8-A6AF-44B2-A4AF-D062E6AA18F4}.Debug|x64.Build.0 = Debug|x64
+		{331021F8-A6AF-44B2-A4AF-D062E6AA18F4}.Debug|x86.ActiveCfg = Debug|Win32
+		{331021F8-A6AF-44B2-A4AF-D062E6AA18F4}.Debug|x86.Build.0 = Debug|Win32
+		{331021F8-A6AF-44B2-A4AF-D062E6AA18F4}.Release|x64.ActiveCfg = Release|x64
+		{331021F8-A6AF-44B2-A4AF-D062E6AA18F4}.Release|x64.Build.0 = Release|x64
+		{331021F8-A6AF-44B2-A4AF-D062E6AA18F4}.Release|x86.ActiveCfg = Release|Win32
+		{331021F8-A6AF-44B2-A4AF-D062E6AA18F4}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{331021F8-A6AF-44B2-A4AF-D062E6AA18F4} = {3A52DB22-4416-4027-9172-41A2CB1CF2ED}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41A811AE-DE3E-4BBB-A31B-D65118B3C90B}
+	EndGlobalSection
+EndGlobal
