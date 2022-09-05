@@ -1,5 +1,5 @@
-﻿using Framework.Wpf.Helpers;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
+using Framework.Wpf.Helpers;
 
 namespace Framework.Wpf.Model
 {
@@ -40,7 +40,7 @@ namespace Framework.Wpf.Model
 
                 if (!_isExpanded.HasValue)
                 {
-                    Children.Remove(DummyChild);
+                    _ = Children.Remove(DummyChild);
                     LoadChildren();
                 }
 

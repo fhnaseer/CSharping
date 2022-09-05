@@ -9,8 +9,10 @@ namespace Framework.Wpf.WindowWrappers
 
         public NewWindowWrapper()
         {
-            _window = new NewWindow();
-            _window.DataContext = new NewWindowViewModel();
+            _window = new NewWindow
+            {
+                DataContext = new NewWindowViewModel()
+            };
         }
 
         public void Show()
