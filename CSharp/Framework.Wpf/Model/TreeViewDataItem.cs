@@ -40,7 +40,7 @@ namespace Framework.Wpf.Model
 
                 if (!_isExpanded.HasValue)
                 {
-                    _ = Children.Remove(DummyChild);
+                    Children.Remove(DummyChild);
                     LoadChildren();
                 }
 
