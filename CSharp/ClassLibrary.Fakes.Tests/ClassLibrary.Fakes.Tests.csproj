@@ -12,9 +12,15 @@
 		<IsTestProject>true</IsTestProject>
 	</PropertyGroup>
 
-
+	<ItemGroup>
+	  <Compile Remove="FakesAssemblies\**" />
+	  <EmbeddedResource Remove="FakesAssemblies\**" />
+	  <None Remove="FakesAssemblies\**" />
+	</ItemGroup>
 
 	<ItemGroup>
+		<!--<PackageReference Include="Microsoft.QualityTools.Testing.Fakes" Version="17.5.0-beta.23060.1" />-->
+		<PackageReference Include="Microsoft.Testing.Extensions.Fakes" Version="17.11.0-beta.24226.4" />
 		<PackageReference Include="Moq" Version="4.20.70" />
 		<PackageReference Include="MSTest" Version="3.2.2" />
 		<PackageReference Include="Microsoft.Testing.Extensions.TrxReport" Version="1.0.2" />
@@ -24,6 +30,10 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <AdditionalDesignTimeBuildInput Remove="FakesAssemblies\**" />
 	</ItemGroup>
 
 </Project>
